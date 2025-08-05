@@ -7,7 +7,7 @@ public class Principal {
         Scanner input = new Scanner (System.in);
 
         System.out.print("Digite a senha: ");
-        int senha = input.nextLine();
+        int senha = input.nextInt();
 
         do{
             if (senha ==1234){
@@ -15,8 +15,9 @@ public class Principal {
             }
             else{
                 System.out.print("Senha incorreta, tente novamente");
+                break;
             }
         }
-        while(senha=!1234);
+        while(senha!=1234);
     }
 }
